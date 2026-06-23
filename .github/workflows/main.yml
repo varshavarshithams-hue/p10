@@ -6,7 +6,7 @@ on:
 
 job: 
  build:
-   run: windows-latest
+   runs-on: windows-latest
    steps:
     - name: checkout code
       user: actions/checkout@v4
@@ -14,5 +14,7 @@ job:
     - name: setup python
       user: actions/setup python@v5
       with:
-       version: Python '3.14'
-        run: python run app
+       python-version: '3.14'
+
+    - name: Run Python File
+      uses: python app.py
