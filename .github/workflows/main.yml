@@ -1,8 +1,8 @@
-name: DevOps Pipline
+name: DevOps Pipeline
 
 on:
  push:
-  branches: [ 'main' ]
+  branches: [ "main" ]
  
 jobs:
   build:
@@ -17,4 +17,4 @@ jobs:
          python-version: '3.14'
 
      - name: Run Python File
-       run: python app.py
+       run: python run app
