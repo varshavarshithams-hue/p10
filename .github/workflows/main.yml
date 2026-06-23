@@ -4,17 +4,17 @@ on:
  push:
    branches: [ "main" ]
 
-job: 
+jobs: 
  build:
    runs-on: windows-latest
    steps:
     - name: checkout code
-      user: actions/checkout@v4
+      uses: actions/checkout@v4
 
     - name: setup python
-      user: actions/setup python@v5
+      uses: actions/setup python@v5
       with:
        python-version: '3.14'
 
     - name: Run Python File
-      uses: python app.py
+      run: python app.py
