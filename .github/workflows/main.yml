@@ -3,7 +3,7 @@ name: DevOps Pipline
 on:
  push:
   branches: [ 'main' ]
-  
+ 
 jobs:
   build:
    runs-on: windows-latest
