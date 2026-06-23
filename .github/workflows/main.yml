@@ -9,10 +9,10 @@ jobs:
    runs-on: windows-latest
    steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: action/checkout@v4
 
     - name: Setup Python
-      uses: actions/setup-python@v5
+      uses: action/setup-python@v5
       with:
        python-version: '3.14'
 
